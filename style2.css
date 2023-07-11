@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(33, 113, 159);
+}
+.container {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    animation: slide 3s infinite;
+    color: white;
+    font-weight: 500;
+  }
+
+
+@keyframes slide {
+    0% {
+      transform: translate(-50%, -100%);
+    }
+    25% {
+      transform: translate(-50%, 0);
+    }
+    50% {
+      transform: translate(-50%, 0);
+    }
+    75% {
+      transform: translate(-50%, 100%);
+    }
+    100% {
+      transform: translate(-50%, -100%);
+    }
+  }
